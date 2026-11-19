@@ -1,0 +1,27 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, "Segoe UI", Roboto, sans-serif;
+  width: 280px;
+}
+.popup { padding: 16px; }
+.header { display: flex; align-items: center; gap: 8px; margin-bottom: 14px; font-size: 15px; }
+.brand-mark {
+  width: 20px; height: 20px; border-radius: 5px;
+  background: linear-gradient(135deg, #227261, #144036);
+  display: inline-block;
+}
+.status-box {
+  background: #F3FAF7; border: 1px solid #DFF3EA; color: #144036;
+  font-size: 12px; padding: 8px 10px; border-radius: 8px; margin-bottom: 14px;
+}
+.status-box.warn { background: #FBEFD9; border-color: #F0DDA8; color: #6B4E0F; }
+.stat-row { display: flex; gap: 8px; margin-bottom: 14px; }
+.stat { flex: 1; text-align: center; background: #FAFAF8; border-radius: 8px; padding: 8px 4px; }
+.stat-num { font-size: 18px; font-weight: 600; }
+.stat-label { font-size: 10px; color: #6B6F7B; margin-top: 2px; }
+.hint { font-size: 12px; color: #6B6F7B; line-height: 1.5; margin-bottom: 14px; }
+.btn-primary {
+  width: 100%; background: #144036; color: white; border: none; border-radius: 8px;
+  padding: 10px; font-size: 13px; font-weight: 500; cursor: pointer;
+}

@@ -1,0 +1,81 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: #FAFAF8;
+  color: #0E1015;
+}
+.shell { max-width: 760px; margin: 0 auto; padding-bottom: 60px; }
+.topbar {
+  position: sticky; top: 0; background: #FAFAF8;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+  padding: 20px 0 0 0; z-index: 10;
+}
+.brand {
+  font-size: 17px; font-weight: 600; display: flex; align-items: center; gap: 8px; margin-bottom: 16px;
+}
+.brand-mark {
+  width: 22px; height: 22px; border-radius: 6px;
+  background: linear-gradient(135deg, #227261, #144036);
+  display: inline-block;
+}
+.tabs { display: flex; gap: 4px; }
+.tab-btn {
+  background: none; border: none; padding: 10px 14px; font-size: 13px; font-weight: 500;
+  color: #6B6F7B; cursor: pointer; border-bottom: 2px solid transparent;
+}
+.tab-btn.active { color: #144036; border-bottom-color: #144036; }
+.content { padding: 32px 0; }
+.tab-panel { display: none; }
+.tab-panel.active { display: block; }
+h1 { font-size: 22px; margin: 0 0 6px 0; font-family: Georgia, serif; }
+h2 { font-size: 16px; margin: 24px 0 8px 0; font-family: Georgia, serif; }
+.sub { color: #6B6F7B; font-size: 14px; margin: 0 0 20px 0; line-height: 1.5; }
+label { display: block; font-size: 13px; font-weight: 500; margin: 16px 0 6px 0; }
+input[type=text], input[type=url], input[type=password], textarea, select {
+  width: 100%; padding: 10px 12px; font-size: 14px; border: 1px solid rgba(0,0,0,0.12);
+  border-radius: 8px; background: white; font-family: inherit;
+}
+textarea { resize: vertical; }
+.checkbox-label { display: flex; align-items: center; gap: 8px; font-weight: 400; margin-top: 12px; }
+.checkbox-label input { width: auto; margin: 0; }
+.note { font-size: 12px; color: #A8ABB4; margin-top: 12px; line-height: 1.5; }
+.btn-primary {
+  background: #144036; color: white; border: none; border-radius: 8px;
+  padding: 10px 20px; font-size: 14px; font-weight: 500; cursor: pointer; margin-top: 20px;
+}
+.btn-primary:hover { background: #0F2E27; }
+.save-status { margin-left: 10px; font-size: 12px; color: #227261; }
+.progress-box {
+  margin-top: 20px; background: white; border: 1px solid rgba(0,0,0,0.06);
+  border-radius: 10px; padding: 14px; font-size: 13px; color: #6B6F7B;
+}
+.hidden { display: none !important; }
+.facts-review { margin-top: 24px; }
+.fact-card {
+  background: white; border: 1px solid rgba(0,0,0,0.06); border-radius: 10px;
+  padding: 12px; margin-bottom: 8px;
+}
+.fact-card .fact-text { font-size: 13px; margin-bottom: 8px; }
+.fact-card .fact-meta { font-size: 11px; color: #A8ABB4; display: flex; justify-content: space-between; align-items: center; }
+.fact-card .fact-actions button {
+  font-size: 11px; padding: 4px 8px; border-radius: 6px; border: 1px solid rgba(0,0,0,0.1);
+  background: white; cursor: pointer; margin-left: 4px;
+}
+.fact-badge { font-size: 10px; padding: 2px 7px; border-radius: 999px; font-weight: 500; }
+.fact-badge-review { background: #FBEFD9; color: #6B4E0F; }
+.fact-badge-accepted { background: #DFF3EA; color: #144036; }
+.fact-badge-rejected { background: #F8DAD3; color: #8A2814; }
+.mode-options { display: flex; flex-direction: column; gap: 10px; margin-top: 16px; }
+.mode-card {
+  display: flex; gap: 10px; align-items: flex-start; padding: 14px; border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 10px; cursor: pointer;
+}
+.mode-card input { width: auto; margin-top: 3px; }
+.mode-card p { margin: 4px 0 0 0; font-size: 12px; color: #6B6F7B; font-weight: 400; }
+.activity-item {
+  background: white; border: 1px solid rgba(0,0,0,0.06); border-radius: 10px;
+  padding: 12px; margin-bottom: 8px; font-size: 13px;
+}
+.activity-item .activity-top { display: flex; justify-content: space-between; margin-bottom: 4px; }
+.activity-item .activity-meta { font-size: 11px; color: #A8ABB4; }

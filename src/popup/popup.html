@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Meridian</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="popup">
+    <div class="header">
+      <span class="brand-mark"></span>
+      <strong>Meridian</strong>
+    </div>
+
+    <div id="statusBox" class="status-box">Loading...</div>
+
+    <div class="stat-row">
+      <div class="stat"><div class="stat-num" id="statTotal">0</div><div class="stat-label">Analyzed</div></div>
+      <div class="stat"><div class="stat-num" id="statAuto">0</div><div class="stat-label">Auto-drafted</div></div>
+      <div class="stat"><div class="stat-num" id="statEscalated">0</div><div class="stat-label">Escalated</div></div>
+    </div>
+
+    <p class="hint">Open an email in Gmail, then click the round "M" button in the corner of the page to analyze it.</p>
+
+    <button id="openSettings" class="btn-primary">Open settings</button>
+  </div>
+  <script type="module" src="popup.js"></script>
+</body>
+</html>
